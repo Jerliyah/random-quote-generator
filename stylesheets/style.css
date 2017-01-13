@@ -1,0 +1,68 @@
+/*==============
+    Variables
+===============*/
+/*==============
+    Styling
+===============*/
+body {
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box; }
+  body > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(102, 102, 255, 0.5); }
+
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 3rem 5rem;
+  width: 50%; }
+
+main > i {
+  color: #6666ff; }
+
+h1 {
+  display: inline;
+  padding-left: 1rem; }
+  h1:after {
+    font-family: FontAwesome;
+    content: "\f10e";
+    font-size: 1.2em;
+    color: #6666ff;
+    line-height: 1rem;
+    padding-left: 1rem; }
+
+h4 {
+  text-align: right;
+  color: #6666ff; }
+
+aside {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around; }
+  aside > i:hover {
+    color: #6666ff; }
+  aside > i:active {
+    text-shadow: -1px -1px black; }
+
+button {
+  background: #6666ff;
+  border-width: 0;
+  font-weight: bold;
+  padding: 1rem 2rem; }
+  button:hover {
+    background: black;
+    color: white; }
+  button:active {
+    color: #6666ff; }
+
+h6 {
+  background: white;
+  border-radius: 10px;
+  padding: 5px 10px; }
+
+/*# sourceMappingURL=style.css.map */

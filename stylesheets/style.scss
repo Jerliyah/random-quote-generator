@@ -1,0 +1,105 @@
+
+/*==============
+    Variables
+===============*/
+$color1: #6666ff;
+
+$roundBorder: 10px;
+
+
+
+/*==============
+    Styling
+===============*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    // background: url("")
+
+    & > div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba($color1, 0.5);
+    }
+}
+
+
+
+section {
+    background: white;
+    border-radius: $roundBorder;
+    padding: 3rem 5rem;
+    width: 50%;
+}
+
+
+
+main  > i {
+    color: $color1;
+}
+
+h1 {
+    display: inline;
+    padding-left: 1rem;
+
+    &:after {
+        font-family: FontAwesome;
+        // Content Code -> https://github.com/FortAwesome/Font-Awesome/blob/master/css/font-awesome.css
+        content: "\f10e";
+        font-size: 1.2em;
+        color: $color1;
+        line-height: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+h4 {
+    text-align: right;
+    color: $color1;
+}
+
+
+
+aside {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    & > i:hover {
+        color: $color1;
+    }
+
+    & > i:active {
+        text-shadow: -1px -1px black;
+    }
+}
+
+button {
+    background: $color1;
+    border-width: 0;
+    font-weight: bold;
+    padding: 1rem 2rem;
+
+    &:hover {
+        background: black;
+        color: white;
+    }
+
+    &:active {
+        color: $color1;
+    }
+}
+
+
+
+h6 {
+    background: white;
+    border-radius: $roundBorder;
+    padding: 5px 10px;
+}
