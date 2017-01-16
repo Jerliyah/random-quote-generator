@@ -1,13 +1,18 @@
 /*==============
     Variables
 ===============*/
+/* Backgrounds
+1) asanoha
+2) dimension (@2X)
+*/
 /*==============
     Styling
 ===============*/
 body {
   height: 100vh;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: url("../images/asanoha.png"); }
   body > div {
     height: 100%;
     display: flex;

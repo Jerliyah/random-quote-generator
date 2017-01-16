@@ -7,7 +7,10 @@ $color1: #6666ff;
 $roundBorder: 10px;
 
 
-
+/* Backgrounds
+1) asanoha
+2) dimension (@2X)
+*/
 /*==============
     Styling
 ===============*/
@@ -17,7 +20,7 @@ body {
     margin: 0;
     box-sizing: border-box;
 
-    // background: url("")
+    background: url("../images/asanoha.png");
 
     & > div {
         height: 100%;
