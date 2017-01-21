@@ -31,15 +31,9 @@ main > i {
   color: #6666ff; }
 
 h1 {
-  display: inline;
-  padding-left: 1rem; }
-  h1:after {
-    font-family: FontAwesome;
-    content: "\f10e";
-    font-size: 1.2em;
-    color: #6666ff;
-    line-height: 1rem;
-    padding-left: 1rem; }
+  display: inline; }
+  h1 i {
+    color: #6666ff !important; }
 
 h4 {
   text-align: right;

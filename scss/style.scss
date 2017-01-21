@@ -43,22 +43,15 @@ section {
 
 
 
-main  > i {
+main > i {
     color: $color1;
 }
 
 h1 {
     display: inline;
-    padding-left: 1rem;
 
-    &:after {
-        font-family: FontAwesome;
-        // Content Code -> https://github.com/FortAwesome/Font-Awesome/blob/master/css/font-awesome.css
-        content: "\f10e";
-        font-size: 1.2em;
-        color: $color1;
-        line-height: 1rem;
-        padding-left: 1rem;
+    & i {
+        color: $color1 !important;
     }
 }
 
