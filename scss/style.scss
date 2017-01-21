@@ -42,6 +42,9 @@ section {
 }
 
 
+main {
+    text-align: center;
+}
 
 main > i {
     color: $color1;
@@ -54,6 +57,11 @@ h1 {
         color: $color1 !important;
     }
 }
+
+// h1::first-letter {
+//     font-size: 2em;
+//     color: blue;
+// }
 
 h4 {
     text-align: right;

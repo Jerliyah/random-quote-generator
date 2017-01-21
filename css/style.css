@@ -27,6 +27,9 @@ section {
   padding: 3rem 5rem;
   width: 50%; }
 
+main {
+  text-align: center; }
+
 main > i {
   color: #6666ff; }
 
