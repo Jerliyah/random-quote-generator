@@ -39,10 +39,14 @@ h1 i {
 h1::first-letter {
   font-size: 2em;
   color: #6666ff; }
-
-.fa-quote-right {
+h1::after {
+  font-family: FontAwesome;
+  content: "\f10e";
+  display: inline-block;
   line-height: 50% !important;
-  transform: translateY(70%); }
+  transform: translateY(70%);
+  color: #6666ff !important;
+  font-size: 2em; }
 
 h4 {
   text-align: right;

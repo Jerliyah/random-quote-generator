@@ -7,10 +7,9 @@
     function formatting(response) {
 
         var leftQuoteMark = '<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>';
-        var rightQuoteMark = '<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>';
 
         var quote = response.quoteText;
-        $("main").html('<h1>' + leftQuoteMark + ' ' + quote + rightQuoteMark + ' </h1> <br> <h4> -- ' + response.quoteAuthor + '<h4>');
+        $("main").html('<h1>' + leftQuoteMark + ' ' + quote + ' </h1> <br> <h4> -- ' + response.quoteAuthor + '<h4>');
     }
 
     // Learned Something: For ajax call, don't place parenthesis with function name
