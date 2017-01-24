@@ -33,10 +33,16 @@ main {
 main > i {
   color: #6666ff; }
 
-h1 {
-  display: inline; }
-  h1 i {
-    color: #6666ff !important; }
+h1 i {
+  color: #6666ff !important;
+  font-size: 2rem; }
+h1::first-letter {
+  font-size: 2em;
+  color: #6666ff; }
+
+.fa-quote-right {
+  line-height: 50% !important;
+  transform: translateY(70%); }
 
 h4 {
   text-align: right;
