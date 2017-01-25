@@ -48,6 +48,7 @@ tweetBtn.mouseleave( function() { tweetBtn.css('color', 'black'); });
 
 
 
+
 /*****************************
     If ajax call succeeds...
 ******************************/
@@ -62,24 +63,10 @@ function start(response) {
     // The right quote mark is created in css
     $("main").html('<h1>' + leftQuoteMark + ' ' + quoteText + ' </h1> <br> <h4> -- ' + quoteAuthor + '<h4>');
 
-
-
-    // To Tweet
-    // Function expressed here for access to ajax response variables
-    function twitterButton() {
-        // Make sure the quote can fit into the tweet, quoteText and quoteAuthor combined <= 135 (formatting takes up 5)
-        var combined = quoteText + quoteAuthor;
-        if (combined.length > 135) {
-            $("main").html("<h2> Sorry, that quote is too large to tweet. <br> Try finding a shorter one </h2>");
-            tweetBtn.attr('href', 'https://twitter.com/intent/tweet?text=' + 'Sorry, that quote is too large to tweet. Try finding a shorter one');
-
-        }
-        else {
-            tweetBtn.attr('href', 'https://twitter.com/intent/tweet?text=' + '"' + quoteText + '"' + ' --' + quoteAuthor);
-        }
-    }
-
-    tweetBtn.on('click', twitterButton);
+    // Tweet from button click
+    tweetBtn.on('click', function() {
+        tweetBtn.attr('href', 'https://twitter.com/intent/tweet?text=' + '"' + quoteText + '"' + ' --' + quoteAuthor);
+    });
 }
 
 
